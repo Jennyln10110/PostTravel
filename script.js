@@ -7,3 +7,17 @@ upload.addEventListener("change", (e) => {
 
   preview.src = URL.createObjectURL(file);
 });
+
+// --- New: Save postcard as image ---
+const saveBtn = document.getElementById("save-btn");
+
+saveBtn.addEventListener("click", () => {
+  const contentcard = document.getElementById("contentcard");
+
+  html2canvas(contentcard).then((canvas) => {
+    const link = document.createElement("a");
+    link.download = "my-postcard.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  });
+});
