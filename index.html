@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel=stylesheet href="styles.css">
+<title>Travel Postcards</title>
+</head>
+
+<body>
+    <div class="intro-card">
+        <h1>Travel Postcards!</h1>
+        <p>This is where you create a mini postcard to save into an album. Share on social media the cool places you've been!</p>
+    </div>
+
+    <section class="front-card">
+        <label id="img-card">Upload a photo from your adventure!</label><br>
+        <input type="file" id="upload" accept="image/*">
+        <img id="preview" style="width:200px; height:200px; object-fit:cover; display:block; margin-top:10px;">
+    </section>
+    <hr>
+    <section class="content-card">
+        <input type="text" class="title-content" placeholder="Title of Adventure">
+        <br><br>
+        <input type="text" class="content" placeholder="Enter your adventure story">
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
