@@ -2,8 +2,10 @@
 
 <html>
 <head>
-<link rel=stylesheet href="styles.css">
-<title>Travel Postcards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="styles.css">
+    <title>Travel Postcards</title>
 </head>
 
 <body>
@@ -11,20 +13,49 @@
         <h1>Travel Postcards!</h1>
         <p>This is where you create a mini postcard to save into an album. Share on social media the cool places you've been!</p>
     </div>
-    <div id="postcard">
-        <section class="front-card">
-            <label id="img-card">Upload a photo from your adventure!</label><br>
-            <input type="file" id="upload" accept="image/*">
+    <div>
+        <section>
+            <label id="img-card">Upload a photo from your adventure!</label> <input type="file" id="upload" accept="image/*">
         </section>
-        <hr>
-        <section id="contentcard">
-            <img id="preview">            
-            <input type="text" class="title-content" placeholder="Title of Adventure">
-            <br><br>
-            <input type="text" class="content" placeholder="Enter your adventure story">
-        </section>        
+        <br>
+        <section id="postcard">
+            <div id="imagesection">
+                <img id="preview">
+            </div>  
+            <div id="contentcard">
+                <div class="title-row">
+                    <input type="text" class="title-content" placeholder="Title of Adventure">
+                    <div class="stamp"><img src="images/strawberry stamp.jpg"></div>
+                </div>
+                <br>
+                <textarea class="content" placeholder="Enter your adventure story"></textarea>
+            </div>          
+        </section>   
+        
+        <br>
+        <button id="savebtn">Save as Postcard</button>     
     </div>
-    <button id="save-btn">Save as Postcard</button>
+    <!-- <table id="postcard">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <div class="title-row">
+                        <input class="title-content" placeholder="Title of Adventure">
+                        <div class="stamp"><img src="images/strawberry stamp.jpg"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="test">
+                    <img id="preview">
+                </th>
+                <td>
+                    <textarea class="content" placeholder="Enter your adventure story"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> <!--This is an external source that helps screenshot the postcard-->
     <script src="script.js"></script>
