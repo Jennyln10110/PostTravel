@@ -12,9 +12,9 @@ upload.addEventListener("change", (e) => {
 const saveBtn = document.getElementById("save-btn");
 
 saveBtn.addEventListener("click", () => {
-  const contentcard = document.getElementById("contentcard");
+  const postcard = document.getElementById("postcard");
 
-  html2canvas(contentcard).then((canvas) => {
+  html2canvas(postcard).then((canvas) => {
     const link = document.createElement("a");
     link.download = "my-postcard.png";
     link.href = canvas.toDataURL();
